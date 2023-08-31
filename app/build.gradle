@@ -17,6 +17,7 @@ repositories {
 
 dependencies {
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+    implementation 'org.openjfx:javafx-controls:17'
     implementation 'com.google.code.gson:gson:2.8.9'
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
