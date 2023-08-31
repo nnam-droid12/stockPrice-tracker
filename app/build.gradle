@@ -19,13 +19,14 @@ dependencies {
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'
     implementation 'com.google.code.gson:gson:2.8.9'
     // Use JUnit Jupiter for testing.
-    // testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
 
-    // testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'junit:junit:4.12'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.10.0'
+    testImplementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:32.1.1-jre'
-    implementation files('libs/YahooFinanceAPI-3.17.0.jar')
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
